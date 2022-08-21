@@ -1,0 +1,178 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local UICorner = Instance.new("UICorner")
+local Frame_2 = Instance.new("Frame")
+local UICorner_2 = Instance.new("UICorner")
+local TextLabel = Instance.new("TextLabel")
+local TextLabel_2 = Instance.new("TextLabel")
+local TextButton = Instance.new("TextButton")
+local UICorner_3 = Instance.new("UICorner")
+local TextButton_2 = Instance.new("TextButton")
+local UICorner_4 = Instance.new("UICorner")
+local TextButton_3 = Instance.new("TextButton")
+local UICorner_5 = Instance.new("UICorner")
+local TextButton_4 = Instance.new("TextButton")
+local UICorner_6 = Instance.new("UICorner")
+local TextButton_5 = Instance.new("TextButton")
+local UICorner_7 = Instance.new("UICorner")
+local TextButton_6 = Instance.new("TextButton")
+local UICorner_8 = Instance.new("UICorner")
+
+--Properties:
+
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Frame.Parent = ScreenGui
+Frame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Frame.Position = UDim2.new(0.154340833, 0, 0.278246194, 0)
+Frame.Size = UDim2.new(0, 301, 0, 197)
+
+UICorner.CornerRadius = UDim.new(0, 2)
+UICorner.Parent = Frame
+
+Frame_2.Parent = ScreenGui
+Frame_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Frame_2.Position = UDim2.new(0.245444804, 0, 0.290050596, 0)
+Frame_2.Size = UDim2.new(0, 131, 0, 25)
+
+UICorner_2.CornerRadius = UDim.new(0, 2)
+UICorner_2.Parent = Frame_2
+
+TextLabel.Parent = Frame_2
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.Position = UDim2.new(0.0305343512, 0, 0.119999997, 0)
+TextLabel.Size = UDim2.new(0, 122, 0, 19)
+TextLabel.Font = Enum.Font.GothamBold
+TextLabel.Text = "forever.Tay#9565"
+TextLabel.TextColor3 = Color3.fromRGB(63, 63, 63)
+TextLabel.TextSize = 14.000
+
+TextLabel_2.Parent = Frame_2
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.BackgroundTransparency = 1.000
+TextLabel_2.Position = UDim2.new(0.0381679386, 0, -1.27999997, 0)
+TextLabel_2.Size = UDim2.new(0, 122, 0, 19)
+TextLabel_2.Font = Enum.Font.GothamBold
+TextLabel_2.Text = "RBW4 Anti-Lag Gym"
+TextLabel_2.TextColor3 = Color3.fromRGB(63, 63, 63)
+TextLabel_2.TextSize = 14.000
+
+TextButton.Parent = ScreenGui
+TextButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton.Position = UDim2.new(0.438370854, 0, 0.283520728, 0)
+TextButton.Size = UDim2.new(0, 25, 0, 25)
+TextButton.Font = Enum.Font.GothamBold
+TextButton.Text = "X"
+TextButton.TextColor3 = Color3.fromRGB(63, 63, 63)
+TextButton.TextSize = 14.000
+TextButton.TextWrapped = true
+
+UICorner_3.CornerRadius = UDim.new(0, 1)
+UICorner_3.Parent = TextButton
+TextButton.MouseButton1Click:Connect(function()
+	ScreenGui:Destroy()
+end)
+
+TextButton_2.Parent = ScreenGui
+TextButton_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_2.Position = UDim2.new(0.167131126, 0, 0.345699817, 0)
+TextButton_2.Size = UDim2.new(0, 279, 0, 25)
+TextButton_2.Font = Enum.Font.GothamBold
+TextButton_2.Text = "Remove Courtside Benches"
+TextButton_2.TextColor3 = Color3.fromRGB(63, 63, 63)
+TextButton_2.TextSize = 14.000
+TextButton_2.TextWrapped = true
+
+UICorner_4.CornerRadius = UDim.new(0, 1)
+UICorner_4.Parent = TextButton_2
+TextButton_2.MouseButton1Click:Connect(function()
+	game.Workspace.Arena.Courtside.Bench:Destroy()
+	game.Workspace.Arena.Courtside.Seats:Destroy()
+end)
+
+TextButton_3.Parent = ScreenGui
+TextButton_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_3.Position = UDim2.new(0.167131126, 0, 0.399662703, 0)
+TextButton_3.Size = UDim2.new(0, 279, 0, 25)
+TextButton_3.Font = Enum.Font.GothamBold
+TextButton_3.Text = "Remove Hoop Nets"
+TextButton_3.TextColor3 = Color3.fromRGB(63, 63, 63)
+TextButton_3.TextSize = 14.000
+TextButton_3.TextWrapped = true
+
+UICorner_5.CornerRadius = UDim.new(0, 1)
+UICorner_5.Parent = TextButton_3
+TextButton_3.MouseButton1Click:Connect(function()
+	game.Workspace["_Hoop1"].Net:Destroy()
+	game.Workspace["_Hoop2"].Net:Destroy()
+end)
+
+TextButton_4.Parent = ScreenGui
+TextButton_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_4.Position = UDim2.new(0.167131126, 0, 0.455311924, 0)
+TextButton_4.Size = UDim2.new(0, 279, 0, 25)
+TextButton_4.Font = Enum.Font.GothamBold
+TextButton_4.Text = "Remove Hoop Stands"
+TextButton_4.TextColor3 = Color3.fromRGB(63, 63, 63)
+TextButton_4.TextSize = 14.000
+TextButton_4.TextWrapped = true
+
+UICorner_6.CornerRadius = UDim.new(0, 1)
+UICorner_6.Parent = TextButton_4
+TextButton_4.MouseButton1Click:Connect(function()
+	game.Workspace["_Hoop1"].Stand:Destroy()
+	game.Workspace["_Hoop2"].Stand:Destroy()
+end)
+
+TextButton_5.Parent = ScreenGui
+TextButton_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_5.Position = UDim2.new(0.164987504, 0, 0.507588506, 0)
+TextButton_5.Size = UDim2.new(0, 279, 0, 25)
+TextButton_5.Font = Enum.Font.GothamBold
+TextButton_5.Text = "Remove Arena (Will Remove Arena Seats)"
+TextButton_5.TextColor3 = Color3.fromRGB(63, 63, 63)
+TextButton_5.TextSize = 14.000
+TextButton_5.TextWrapped = true
+
+UICorner_7.CornerRadius = UDim.new(0, 1)
+UICorner_7.Parent = TextButton_5
+TextButton_5.MouseButton1Click:Connect(function()
+	game.Workspace.Arena.Stands.Parts:Destroy()
+	game.Workspace.Arena.Stands.Rails:Destroy()
+	game.Workspace.Arena.Stands.Edges:Destroy()
+	game.Workspace.Arena.Stands["Exit Doors"]:Destroy()
+	game.Workspace.Arena.Stands.Lights:Destroy()
+end)
+
+TextButton_6.Parent = ScreenGui
+TextButton_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_6.Position = UDim2.new(0.167131141, 0, 0.561551452, 0)
+TextButton_6.Size = UDim2.new(0, 279, 0, 21)
+TextButton_6.Font = Enum.Font.GothamBold
+TextButton_6.Text = "Remove All"
+TextButton_6.TextColor3 = Color3.fromRGB(63, 63, 63)
+TextButton_6.TextSize = 14.000
+TextButton_6.TextWrapped = true
+
+UICorner_8.CornerRadius = UDim.new(0, 1)
+UICorner_8.Parent = TextButton_6
+TextButton_6.MouseButton1Click:Connect(function()
+	game.Workspace.Arena.Courtside.Bench:Destroy()
+	game.Workspace.Arena.Courtside.Seats:Destroy()
+	game.Workspace.Arena.Stands.Parts:Destroy()
+	game.Workspace.Arena.Stands.Rails:Destroy()
+	game.Workspace.Arena.Stands.Edges:Destroy()
+	game.Workspace.Arena.Stands["Exit Doors"]:Destroy()
+	game.Workspace.Arena.Stands.Lights:Destroy()
+	game.Workspace["_Hoop1"].Stand:Destroy()
+	game.Workspace["_Hoop2"].Stand:Destroy()
+	game.Workspace["_Hoop1"].Net:Destroy()
+	game.Workspace["_Hoop2"].Net:Destroy()
+end)
